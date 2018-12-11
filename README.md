@@ -1,10 +1,10 @@
-#SQL Database Creation 1
+# SQL Database Creation 1
 
 
 Author: Michael Bottom
 Date: 3/19/2018
 
-##Summary:
+## Summary:
 
 
 This database would be created to store video clips efficiently and allow for training of a neural network whose job it would be to recognize certain actions occurring in the video (i.e. running, jumping, standing, waving) and recognize certain objects occurring in the video (i.e. cats, dogs, cars, water, trees).
@@ -14,7 +14,7 @@ Primary Key: Vid_ID
 Entity Keys: Action/Object, Tag_ID, Start_SEQ, Stop_SEQ, Vid_RES, Frame_CLR.
 Foreign Key: Source_ID
 
-##File List
+## File List
 
 ```
 Database Creation.sql
