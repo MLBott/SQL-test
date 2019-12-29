@@ -9,9 +9,9 @@ This database would be created to store video clips efficiently and allow for tr
 
 To arrange the data quickly and efficiently each item needs to have a primary key. Entities would be classifyed as  action/object, tags for action/object, relevant start time, relevant stop time, video resolution, and frame reference clarity. The foreign key would be the site that the video clip was pulled from.
 
-Primary Key: Vid_ID <br/>
-Entity Keys: Action/Object, Tag_ID, Start_SEQ, Stop_SEQ, Vid_RES, Frame_CLR <br/>
-Foreign Key: Source_ID
+> Primary Key: Vid_ID <br/>
+> Entity Keys: Action/Object, Tag_ID, Start_SEQ, Stop_SEQ, Vid_RES, Frame_CLR <br/>
+> Foreign Key: Source_ID
 
 ## File List
 
