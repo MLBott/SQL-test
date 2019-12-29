@@ -1,9 +1,6 @@
 # SQL Database Creation 1
 
-
 Author: Michael Bottom
-
-Date: 3/19/2018
 
 ## Summary:
 
