@@ -1,23 +1,35 @@
-# SQL Simple Database 
+# SQL Simple Database: Video Content Classifier
 
-Author: Michael Bottom
+Created by: Michael Bottom
 
-## Summary:
+## Overview:
 
+Welcome to my repository containing a simple SQL database designed to support a neural network that classifies video content. The database stores video clips efficiently, with an emphasis on recognizing specific actions (i.e., running, jumping, standing, waving) and identifying objects (i.e., cats, dogs, cars, water, trees) in the video.
 
-The database stores video clips efficiently and is meant to support a neural network that recognizes certain actions occurring in the video (i.e. running, jumping, standing, waving) and recognizes certain objects appearing in the video (i.e. cats, dogs, cars, water, trees).
+This database is designed for quick data retrieval and efficient organization, relying on primary and foreign keys for each data item. Entities include characteristics such as action/object type, associated tags, relevant time frames, video resolution, and frame clarity reference. 
 
-To arrange the data quickly and efficiently each item needs to have a primary key. Entities would be classifyed as  action/object, tags for action/object, relevant start time, relevant stop time, video resolution, and frame reference clarity. The foreign key would be the site that the video clip was pulled from.
+## Schema:
 
-> Primary Key: Vid_ID <br/>
-> Entity Keys: Action/Object, Tag_ID, Start_SEQ, Stop_SEQ, Vid_RES, Frame_CLR <br/>
-> Foreign Key: Source_ID
+**Primary Key**: `Vid_ID` - A unique identifier for each video.
 
-## File List
+**Entity Keys**: 
 
-```
-Database Creation.sql
-Database ERD Creation.docx
-Database Normalization.vsd
-README.md
-SQL Queries 1.sql
+* `Action/Object` - Classification of the main action or object in the video.
+* `Tag_ID` - Tags associated with the action or object.
+* `Start_SEQ` and `Stop_SEQ` - Time sequence markers for the action or object's appearance.
+* `Vid_RES` - Video resolution.
+* `Frame_CLR` - Clarity of the frame reference.
+
+**Foreign Key**: `Source_ID` - Identifier for the site from which the video clip was sourced.
+
+## File Structure:
+
+The repository consists of the following key files:
+
+* `Database Creation.sql` - SQL script for creating the database.
+* `Database ERD Creation.docx` - Document detailing the Entity Relationship Diagram (ERD) of the database.
+* `Database Normalization.vsd` - Diagram demonstrating the normalization process of the database.
+* `README.md` - This file, providing a high-level overview of the repository.
+* `SQL Queries 1.sql` - Example SQL queries demonstrating interaction with the database.
+
+Feel free to explore, learn, and provide feedback on this SQL database design project!
